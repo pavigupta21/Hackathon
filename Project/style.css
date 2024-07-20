@@ -83,14 +83,22 @@ body {
     flex-direction: column;
     align-items: center;
 }
+.card-container {
+    display: flex; /* Align cards horizontally */
+    justify-content: center; /* Center align the cards */
+    flex-wrap: wrap; /* Wrap cards if they don't fit in one row */
+    gap: 20px; /* Space between cards */
+    margin-bottom: 40px; 
+}
 
 .card {
-    margin: 20px;
+     flex: 1 1 250px; /* Grow and shrink as needed, base width 250px */
+    margin: 20px; /* Margin around each card */
     text-align: center;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 250px;
+    max-width: 250px; 
 }
 
 .card-img {
@@ -256,34 +264,34 @@ body {
 }
 
 .new-image img {
-    max-width: 100%; 
-    height: auto; 
+    width:1200px;
+    height: 270px;
 }
 /* Container for image and text */
 .image-text-container {
     display: flex; /* Use flexbox to place items side by side */
-    align-items: center; /* Align items vertically center */
+    align-items: center; /* Vertically align items in the center */
+    justify-content: flex-start; /* Align items to the left */
     margin: 20px 0; /* Add margin around the container */
+    max-width: 100%; /* Ensure the container does not stretch beyond its parent */
 }
 
-/* Style for the image */
 .image-text-container .image {
-    width: 250px; /* Increase the width of the image */
-    height: auto; /* Maintain the aspect ratio */
-    margin-right: 25px; /* Increase space between the image and text */
+    width: 600px; /* Adjust the width of the image */
+    height: 700px; /* Maintain the aspect ratio */
+    margin-right: 25px; /* Space between the image and text */
 }
 
-/* Style for the text */
 .image-text-container .text {
-    max-width: 600px; /* Increase the maximum width of the text block */
-    color: #3e2723; /* Optional: Limit the width of the text block */
+    max-width: 600px; /* Adjust the maximum width of the text block */
+    color: #3e2723;
+    font-size: 40px /* Text color */
 }
 
-/* Additional styling for text elements */
 .image-text-container .text h3 {
-    margin-top: 0; /* Remove margin from the top of heading */
+    margin-top: 0; /* Remove top margin from heading */
 }
 
 .image-text-container .text p {
-    margin-bottom: 0; /* Remove margin from the bottom of paragraph */
+    margin-bottom: 0; /* Remove bottom margin from paragraph */
 }
