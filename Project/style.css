@@ -1,11 +1,11 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #F3FEB8; /* Set background color of the entire page */
+    background-color: #F3FEB8;
 }
 
 .navbar {
-    background-color: #FFB22C; /* Navbar background color */
+    background-color: #FFB22C;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -13,8 +13,8 @@ body {
     display: flex;
     align-items: center;
     padding: 10px 20px;
-    border-bottom: 1px solid #ddd; /* Optional: Adds a light border at the bottom for definition */
-    z-index: 1000; /* Ensures the navbar is on top of other content */
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
 }
 
 .navbar ul {
@@ -27,27 +27,27 @@ body {
 }
 
 .navbar li {
-    margin: 0 10px; /* Reduced spacing between options */
+    margin: 0 10px;
 }
 
 .navbar a {
     display: block;
-    color: #e40909; /* Set text color to red */
+    color: #e40909;
     text-align: center;
-    padding: 14px 10px; /* Reduced padding for less spacing */
+    padding: 14px 10px;
     text-decoration: none;
 }
 
 .navbar a:hover {
     background-color: greenyellow;
-    color: white; /* Optional: Changes text color to white on hover */
+    color: white;
 }
 
 .logo {
     width: 50px;
     height: auto;
     animation: logo-animation 2s infinite;
-    margin-right: 20px; /* Add some margin to the right of the logo */
+    margin-right: 20px;
 }
 
 @keyframes logo-animation {
@@ -62,11 +62,26 @@ body {
     }
 }
 
+.login-btn {
+    background-color: #e40909;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 30px;
+    border-radius: 5px;
+}
+
+.login-btn:hover {
+    background-color: #c10808;
+}
+
 .page-content {
-    padding-top: 60px; /* Adjust based on the height of your navbar */
+    padding-top: 60px;
     display: flex;
-    flex-wrap: wrap; /* Allows images to wrap to the next line if needed */
-    justify-content: center; /* Center content horizontally */
+    flex-direction: column;
+    align-items: center;
 }
 
 .card {
@@ -75,12 +90,12 @@ body {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 250px; /* Set the width of each card */
+    width: 250px;
 }
 
 .card-img {
-    width: 100%; /* Make image take up full width of card */
-    border-bottom: 2px solid #ddd; /* Optional: Add a border between image and text */
+    width: 100%;
+    border-bottom: 2px solid #ddd;
 }
 
 .card-text {
@@ -109,20 +124,68 @@ body {
     background-color: #c10808;
 }
 
-/* Rewards Title Styling */
 .rewards-title {
     width: 100%;
     text-align: center;
-    margin: 40px 0; /* Spacing above and below the title */
+    margin: 40px 0;
 }
 
 .rewards-title h1 {
-    font-size: 2.5em; /* Adjust size as needed */
-    color: #3e2723; /* Chocolaty brown color */
-    margin: 0; /* Remove default margin */
+    font-size: 2.5em;
+    color: #3e2723;
+    margin: 0;
 }
 
-/* Animation for cards */
+.rewards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.rewards-cards {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 80%;
+    padding: 10px;
+}
+
+.reward-card {
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.scroll-btn {
+    background-color: #e40909;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.left-btn {
+    left: 10px;
+}
+
+.right-btn {
+    right: 10px;
+}
+
+.scroll-btn:hover {
+    background-color: #c10808;
+}
+
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -134,13 +197,11 @@ body {
     }
 }
 
-/* Apply animation to each card */
 .card {
-    opacity: 0; /* Start with hidden opacity */
-    animation: fadeInUp 1s ease-out forwards; /* Apply the fadeInUp animation */
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
 }
 
-/* Add a delay for each card to create a staggered effect */
 .card:nth-child(1) {
     animation-delay: 0.2s;
 }
@@ -177,52 +238,52 @@ body {
     animation-delay: 1.8s;
 }
 
-/* Adjust page content for scrolling */
 .page-content {
-    overflow-y: scroll; /* Enable vertical scrolling */
-    height: calc(100vh - 60px); /* Make sure the page content fits within the viewport height minus the navbar */
+    overflow-y: auto;
+    height: calc(100vh - 60px);
 }
-/* Style for the icon within <p> */
+
 .icon {
-    width: 1em; /* Set the width of the icon to match the font size */
-    height: 1em; /* Set the height of the icon to match the font size */
-    vertical-align: middle; /* Align the icon vertically with the text */
-    margin-right: 0.5em; /* Add space between the icon and the text */
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    margin-right: 0.5em;
 }
 
-/* Additional styles for the page content and cards */
-.page-content {
-    padding-top: 60px; /* Adjust based on the height of your navbar */
-    display: flex;
-    flex-wrap: wrap; /* Allows images to wrap to the next line if needed */
-    justify-content: center; /* Center content horizontally */
-}
-
-.card {
-    margin: 20px;
+.new-image {
     text-align: center;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 250px; /* Set the width of each card */
+    margin: 40px 0; 
 }
 
-.card-img {
-    width: 100%; /* Make image take up full width of card */
-    border-bottom: 2px solid #ddd; /* Optional: Add a border between image and text */
+.new-image img {
+    max-width: 100%; 
+    height: auto; 
+}
+/* Container for image and text */
+.image-text-container {
+    display: flex; /* Use flexbox to place items side by side */
+    align-items: center; /* Align items vertically center */
+    margin: 20px 0; /* Add margin around the container */
 }
 
-.card-text {
-    padding: 20px;
+/* Style for the image */
+.image-text-container .image {
+    width: 250px; /* Increase the width of the image */
+    height: auto; /* Maintain the aspect ratio */
+    margin-right: 25px; /* Increase space between the image and text */
 }
 
-.card-text h3 {
-    margin-top: 0;
+/* Style for the text */
+.image-text-container .text {
+    max-width: 600px; /* Increase the maximum width of the text block */
+    color: #3e2723; /* Optional: Limit the width of the text block */
 }
 
-.card-text p {
-    color: #555;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Additional styling for text elements */
+.image-text-container .text h3 {
+    margin-top: 0; /* Remove margin from the top of heading */
+}
+
+.image-text-container .text p {
+    margin-bottom: 0; /* Remove margin from the bottom of paragraph */
 }

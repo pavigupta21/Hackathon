@@ -15,6 +15,7 @@
             <li><a href="#services" style="color: #e40909 !important;">Services</a></li>
             <li><a href="#contact" style="color: #e40909 !important;">Contact</a></li>
         </ul>
+        <button class="login-btn">Login</button>
     </nav>
     <div class="page-content">
         <!-- First Row -->
@@ -55,69 +56,83 @@
             <h1 style="color: brown; font-style: italic; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Rewards!</h1>
         </div>
         <!-- Reward Cards -->
-        <div class="card">
-            <img src="../Assets/rew1.webp" class="card-img" alt="Small Hash Browns">
-            <div class="card-text">
-                <h3>Small Hash Browns</h3>
-                <p><img src="../Assets/icon.png" class="icon" alt="Icon"> 400</p>
+        <div class="rewards-container">
+            <button class="scroll-btn left-btn" onclick="scrollLeft()">&#9664;</button>
+            <div class="rewards-cards">
+                <div class="reward-card">
+                    <img src="../Assets/rew1.webp" class="card-img" alt="Small Hash Browns">
+                    <div class="card-text">
+                        <h3>Small Hash Browns</h3>
+                        <p><img src="../Assets/icon.png" class="icon" alt="Icon"> 400</p>
+                    </div>
+                </div>
+                <div class="reward-card">
+                    <img src="../Assets/rew2.webp" class="card-img" alt="5pc French Toast">
+                    <div class="card-text">
+                        <h3>5pc French Toast</h3>
+                        <p><img src="../Assets/icon.png" class="icon" alt="Icon"> 550</p>
+                    </div>
+                </div>
+                <div class="reward-card">
+                    <img src="../Assets/rew3.webp" class="card-img" alt="Egg and Cheese Croissan'wich">
+                    <div class="card-text">
+                        <h3>Egg and Cheese Croissan'wich</h3>
+                        <p><img src="../Assets/icon.png" class="icon" alt="Icon"> 250</p>
+                    </div>
+                </div>
+                <div class="reward-card">
+                    <img src="../Assets/rew4.webp" class="card-img" alt="Cheeseburger">
+                    <div class="card-text">
+                        <h3>Cheeseburger</h3>
+                        <p><img src="../Assets/icon.png" class="icon" alt="Icon"> 320</p>
+                    </div>
+                </div>
+                <div class="reward-card">
+                    <img src="../Assets/rew5.webp" class="card-img" alt="Bacon Cheeseburger">
+                    <div class="card-text">
+                        <h3>Bacon Cheeseburger</h3>
+                        <p><img src="../Assets/icon.png" class="icon" alt="Icon"> 450</p>
+                    </div>
+                </div>
+                <div class="reward-card">
+                    <img src="../Assets/rew6.webp" class="card-img" alt="Whopper">
+                    <div class="card-text">
+                        <h3>Whopper</h3>
+                        <p><img src="../Assets/icon.png" class="icon" alt="Icon"> 200</p>
+                    </div>
+                </div>
+                <div class="reward-card">
+                    <img src="../Assets/rew7.webp" class="card-img" alt="Royal Crispy Chicken">
+                    <div class="card-text">
+                        <h3>Royal Crispy Chicken</h3>
+                        <p><img src="../Assets/icon.png" class="icon" alt="Icon"> 350</p>
+                    </div>
+                </div>
+                <div class="reward-card">
+                    <img src="../Assets/rew8.webp" class="card-img" alt="Bacon King">
+                    <div class="card-text">
+                        <h3>Bacon King</h3>
+                        <p><img src="../Assets/icon.png" class="icon" alt="Icon"> 180</p>
+                    </div>
+                </div>
             </div>
+            <button class="scroll-btn right-btn" onclick="scrollRight()">&#9654;</button>
         </div>
-        <div class="card">
-            <img src="../Assets/rew2.webp" class="card-img" alt="5pc French Toast">
-            <div class="card-text">
-                <h3>5pc French Toast</h3>
-                <p><img src="../Assets/icon.png" class="icon" alt="Icon"> 550</p>
-            </div>
+        <div class="new-image">
+            <img src="../Assets/bkwall.jpg" alt="New Image Description">
         </div>
-        <div class="card">
-            <img src="../Assets/rew3.webp" class="card-img" alt="Egg and Cheese Croissan'wich">
-            <div class="card-text">
-                <h3>Egg and Cheese Croissan'wich</h3>
-                <p><img src="../Assets/icon.png" class="icon" alt="Icon"> 250</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="../Assets/rew4.webp" class="card-img" alt="Cheeseburger">
-            <div class="card-text">
-                <h3>Cheeseburger</h3>
-                <p><img src="../Assets/icon.png" class="icon" alt="Icon"> 320</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="../Assets/rew5.webp" class="card-img" alt="Bacon Cheeseburger">
-            <div class="card-text">
-                <h3>Bacon Cheeseburger</h3>
-                <p><img src="../Assets/icon.png" class="icon" alt="Icon"> 450</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="../Assets/rew6.webp" class="card-img" alt="Whopper">
-            <div class="card-text">
-                <h3>Whopper</h3>
-                <p><img src="../Assets/icon.png" class="icon" alt="Icon"> 200</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="../Assets/rew7.webp" class="card-img" alt="Royal Crispy Chicken">
-            <div class="card-text">
-                <h3>Royal Crispy Chicken</h3>
-                <p><img src="../Assets/icon.png" class="icon" alt="Icon"> 350</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="../Assets/rew8.webp" class="card-img" alt="Bacon King">
-            <div class="card-text">
-                <h3>Bacon King</h3>
-                <p><img src="../Assets/icon.png" class="icon" alt="Icon"> 180</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="../Assets/rew9.webp" class="card-img" alt="Vanilla Shake">
-            <div class="card-text">
-                <h3>Vanilla Shake</h3>
-                <p><img src="Assets/icon.png" class="icon" alt="Icon"> 220</p>
-            </div>
-        </div>
+       <!-- Image and Text Container -->
+<div class="image-text-container">
+    <img src="../Assets/offers.webp" alt="Description of Image" class="image">
+    <div class="text">
+        <h3>Save $$$</h3>
+        <h3>with offers</h3>
+        <h3>on demand</h3>
+        
     </div>
+</div>
+
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
