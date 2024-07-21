@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>My First Website</title>
+    <title>Burger King</title>
 </head>
 <body>
     <nav class="navbar">
         <img src="../Assets/download.jpg" alt="Burger King Logo" class="logo">
         <ul>
-            <li><a href="#home" style="color: #e40909 !important;"><b>Home</b></a></li>
-            <li><a href="#about" style="color: #e40909 !important;"><b>About</b></a></li>
-            <li><a href="#services" style="color: #e40909 !important;"><b>Services</b></a></li>
-            <li><a href="#contact" style="color: #e40909 !important;"><b>Contact</b></a></li>
+            <li><a href="#home"><b>Home</b></a></li>
+            <li><a href="#about"><b>About</b></a></li>
+            <li><a href="#services"><b>Services</b></a></li>
+            <li><a href="#bottom-box"><b>Contact</b></a></li>
         </ul>
-        <button class="login-btn">Login</button>
+        <a href="http://127.0.0.1:5500/Project/login.html">
+        <button class="login-btn">Sign Up/Sign In</button>
+        </a>
     </nav>
+    <div>
     <div class="page-content">
         <div class="card-container">
         <div class="card">
@@ -53,64 +56,64 @@
             </div>
         </div>
         </div>
-        <div class="rewards-title">
-            <h1 style="color: brown; font-style: italic; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Rewards!</h1>
+        <div class="rewards-title lazy">
+            <h1 style="color: brown;">Rewards!</h1>
         </div>
         <div class="rewards-container">
             <button class="scroll-btn left-btn" onclick="scrollLeft()">&#9664;</button>
             <div class="rewards-cards">
-                <div class="reward-card">
-                    <img src="../Assets/rew1.webp" class="card-img" alt="Small Hash Browns">
-                    <div class="card-text">
+                <div class="reward-card lazy">
+                    <img src="../Assets/rew1.webp" class="card-img lazy" alt="Small Hash Browns">
+                    <div class="card-text lazy">
                         <h3>Small Hash Browns</h3>
                         <p><img src="../Assets/icon.png" class="icon" alt="Icon"> 400</p>
                     </div>
                 </div>
-                <div class="reward-card">
-                    <img src="../Assets/rew2.webp" class="card-img" alt="5pc French Toast">
-                    <div class="card-text">
+                <div class="reward-card lazy">
+                    <img src="../Assets/rew2.webp" class="card-img lazy" alt="5pc French Toast">
+                    <div class="card-text lazy">
                         <h3>5pc French Toast</h3>
                         <p><img src="../Assets/icon.png" class="icon" alt="Icon"> 550</p>
                     </div>
                 </div>
-                <div class="reward-card">
-                    <img src="../Assets/rew3.webp" class="card-img" alt="Egg and Cheese Croissan'wich">
-                    <div class="card-text">
+                <div class="reward-card lazy">
+                    <img src="../Assets/rew3.webp" class="card-img lazy" alt="Egg and Cheese Croissan'wich">
+                    <div class="card-text lazy">
                         <h3>Egg and Cheese Croissan'wich</h3>
                         <p><img src="../Assets/icon.png" class="icon" alt="Icon"> 250</p>
                     </div>
                 </div>
-                <div class="reward-card">
-                    <img src="../Assets/rew4.webp" class="card-img" alt="Cheeseburger">
-                    <div class="card-text">
+                <div class="reward-card lazy">
+                    <img src="../Assets/rew4.webp" class="card-img lazy" alt="Cheeseburger">
+                    <div class="card-text lazy">
                         <h3>Cheeseburger</h3>
                         <p><img src="../Assets/icon.png" class="icon" alt="Icon"> 320</p>
                     </div>
                 </div>
-                <div class="reward-card">
-                    <img src="../Assets/rew5.webp" class="card-img" alt="Bacon Cheeseburger">
-                    <div class="card-text">
+                <div class="reward-card lazy">
+                    <img src="../Assets/rew5.webp" class="card-img lazy" alt="Bacon Cheeseburger">
+                    <div class="card-text lazy">
                         <h3>Bacon Cheeseburger</h3>
                         <p><img src="../Assets/icon.png" class="icon" alt="Icon"> 450</p>
                     </div>
                 </div>
-                <div class="reward-card">
-                    <img src="../Assets/rew6.webp" class="card-img" alt="Whopper">
-                    <div class="card-text">
+                <div class="reward-card lazy">
+                    <img src="../Assets/rew6.webp" class="card-img lazy" alt="Whopper">
+                    <div class="card-text lazy">
                         <h3>Whopper</h3>
                         <p><img src="../Assets/icon.png" class="icon" alt="Icon"> 200</p>
                     </div>
                 </div>
-                <div class="reward-card">
-                    <img src="../Assets/rew7.webp" class="card-img" alt="Royal Crispy Chicken">
-                    <div class="card-text">
+                <div class="reward-card lazy">
+                    <img src="../Assets/rew7.webp" class="card-img lazy" alt="Royal Crispy Chicken">
+                    <div class="card-text lazy">
                         <h3>Royal Crispy Chicken</h3>
                         <p><img src="../Assets/icon.png" class="icon" alt="Icon"> 350</p>
                     </div>
                 </div>
-                <div class="reward-card">
-                    <img src="../Assets/rew8.webp" class="card-img" alt="Bacon King">
-                    <div class="card-text">
+                <div class="reward-card lazy">
+                    <img src="../Assets/rew8.webp" class="card-img lazy" alt="Bacon King">
+                    <div class="card-text lazy">
                         <h3>Bacon King</h3>
                         <p><img src="../Assets/icon.png" class="icon" alt="Icon"> 180</p>
                     </div>
@@ -118,12 +121,12 @@
             </div>
             <button class="scroll-btn right-btn" onclick="scrollRight()">&#9654;</button>
         </div>
-        <div class="new-image">
-            <img src="../Assets/bkwall.jpg" alt="New Image Description">
+        <div class="new-image lazy">
+            <img src="../Assets/bkwall.jpg">
         </div>
        <!-- Image and Text Container -->
-<div class="image-text-container">
-    <img src="../Assets/offers.webp" alt="Description of Image" class="image">
+<div class="image-text-container lazy">
+    <img src="../Assets/offers.webp" class="image">
     <div class="text">
         <h3>🍔 Burger King Exclusive Offers! 🎉</h3>
         <p>Get a <b>Free Whopper</b> with your first digital
@@ -134,7 +137,7 @@
         
     </div>
 </div>
-<div class="bottom-box">
+<div class="bottom-box" id="bottom-box">
     <div class="text-block">
         <h3>BKC INFO</h3>
         <l>About BK</l><br>
@@ -178,7 +181,7 @@
 </div>
 <div class="continuemore">
     <div><p><b>Policies | Terms of Service | Accessibility | Contact Us</b></p>
-    <p style="font-size: smaller;">TM & Copyright 2021 Burger King Corporation. All Rights Reserved.</p>
+    <p style="font-size: smaller;">TM & Copyright 2024 Burger King Corporation. All Rights Reserved.</p>
     <p style="font-size: 30px;">Created By | TechBuddies Team</p></div>
 </div>
     </div>
