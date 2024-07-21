@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     background-color: #F3FEB8;
 }
 
@@ -220,7 +220,7 @@ body {
 }
 
 .card {
-    margin: 20px; 
+    margin: 30px; 
     text-align: center;
     background-color: #fff;
     border-radius: 10px;

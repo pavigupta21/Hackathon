@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     });
 
-    // Lazy loading effect
+
     const lazyElements = document.querySelectorAll('.lazy');
 
     const observer = new IntersectionObserver((entries, observer) => {

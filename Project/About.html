@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>About Burger King</title>
+    <style>
+        .about-section {
+            text-align: center;
+            padding: 50px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .about-section img {
+            width: 300px;
+            border-radius: 15px;
+            margin-top: 20px;
+            animation: zoomIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.5); }
+            to { transform: scale(1); }
+        }
+
+        .bottom-box {
+            background-color: #f8f8f8;
+            padding: 30px;
+            text-align: left;
+            animation: slideUp 1.5s ease-in-out;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="../Assets/download.jpg" alt="Burger King Logo" class="logo">
+        <ul>
+            <li><a href="http://127.0.0.1:5500/Project/index.html"><b>Home</b></a></li>
+            <li><a href="#about"><b>About</b></a></li>
+            <li><a href="http://127.0.0.1:5500/Project/Services.html"><b>Services</b></a></li>
+            <li><a href="#bottom-box"><b>Contact</b></a></li>
+        </ul>
+        <a href="http://127.0.0.1:5500/Project/login.html">
+        <button class="login-btn">Sign Up/Sign In</button>
+        </a>
+    </nav>
+
+    <div class="page-content">
+        <div class="about-section">
+            <h1>About Burger King</h1>
+            <p>Welcome to Burger King, the home of the Whopper! Since our founding in 1954, we have been committed to serving high-quality, affordable food to our customers. We believe in providing delicious, flame-grilled burgers made with fresh ingredients. Our mission is to bring joy to people's lives through great food and exceptional service.</p>
+            <img src="../Assets/about_us_1.jpg" alt="Burger King Restaurant">
+            
+            <h2>Our Story</h2>
+            <p>Started in Miami, Florida, Burger King has grown into a global brand with over 18,000 locations in more than 100 countries. Our success is built on our passion for great food and our dedication to customer satisfaction. We constantly innovate and adapt to the changing tastes and preferences of our customers while staying true to our roots.</p>
+            <img src="../Assets/our_story.jpg" alt="Burger King History">
+
+            <h2>Our Values</h2>
+            <p>At Burger King, we value quality, customer service, and community. We strive to use fresh, high-quality ingredients in all our products. Our commitment to our customers is unwavering, and we aim to create a welcoming and enjoyable dining experience for everyone. We also believe in giving back to the communities we serve through various initiatives and partnerships.</p>
+            <img src="../Assets/our_values.jpg" alt="Burger King Values">
+
+            <h2>Sustainability</h2>
+            <p>We are dedicated to sustainability and environmental responsibility. From sourcing our ingredients responsibly to reducing our carbon footprint, we take significant steps to ensure that our operations positively impact the planet. Our goal is to create a sustainable future for our customers and communities.</p>
+            <img src="../Assets/sustainability.jpg" alt="Burger King Sustainability">
+
+            <h2>Join Our Team</h2>
+            <p>At Burger King, we believe in providing opportunities for growth and development. We offer a supportive and dynamic work environment where you can thrive. Join our team and be a part of a global brand that values hard work, creativity, and innovation.</p>
+            <img src="../Assets/join_our_team.jpg" alt="Join Burger King Team">
+        </div>
+    </div>
+
+    <div class="bottom-box" id="bottom-box">
+        <div class="text-block">
+            <h3>BKC INFO</h3>
+            <l>About BK</l><br>
+            <l>Trademarks Notice</l><br>
+            <l>Food Quality</l><br>
+            <l>News & PressLink</l><br>
+            <l>Global Media Contacts</l><br>
+            <l>Investor Relations</l><br>
+            <l>Franchising</l><br>
+            <l>International</l><br>
+            <l>Menu</l><br>
+        </div>
+        <div class="text-block">
+            <h3>MY BK</h3>
+            <l>Gift Cards/Crown Cards</l><br>
+            <l>Reload Cards</l><br>
+            <l>Check card balance</l>
+        </div>
+        <div class="text-block">
+            <h3>CAREERS</h3>
+            <l>Careers Home</l><br>
+            <l>Opportunities</l><br>
+            <l>Apply</l><br>
+        </div>
+        <div class="text-block">
+            <h3>BK CARES</h3>
+            <l>Nutrition Explorer</l><br>
+            <l>Download Allergens</l><br>
+            <l>Allergens View in Browser</l><br>
+            <l>Privacy Policy</l><br>
+            <l>Do Not Sell My Personal Information</l><br>
+            <l>Sustainability</l><br>
+            <l>Burger King Foundation</l><br>
+            <l>Diversity</l><br>
+        </div>
+    </div>
+    <div class="continue">
+        <hr style="width:90%">
+    </div>
+    <div class="continuemore">
+        <div><p><b>Policies | Terms of Service | Accessibility | Contact Us</b></p>
+        <p style="font-size: smaller;">TM & Copyright 2024 Burger King Corporation. All Rights Reserved.</p>
+        <p style="font-size: 30px;">Created By | TechBuddies Team</p></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
