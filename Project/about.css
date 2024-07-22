@@ -208,3 +208,18 @@ about-section {
     from { transform: translateY(100%); }
     to { transform: translateY(0); }
 }
+.about-section p
+{
+    font-size: 20px;
+    font-family: "Pacifico",cursive;
+}
+.about-section h2
+{
+    font-size: 30px;
+    font-family: "Pacifico",cursive;
+}
+.about-section h1
+{
+    font-size: 40px;
+    font-family: "Pacifico",cursive;
+}
